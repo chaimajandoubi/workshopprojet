@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>e-bye Products</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+    /> -->
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo"><a href="file.html"><h1 style="color: rgb(191, 37, 68)">E-bye</h1></a></div>
+
+          <nav>
+            <ul id="MenuItems">
+              <li><a href="file.html">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <!-- <li><a href="">About us</a></li>
+              <li><a href="">Contact</a></li> -->
+              <li><a href="account.html">Account</a></li>
+            </ul>
+          </nav>
+          <a href="cart.html"><img
+            src="cart icon.jpg"
+            alt="error cart"
+            width="30px"
+            height="30px"
+          /></a>
+          <img
+            src="menu icon.png"
+            alt="error menu"
+            class="menu-icon"
+            onclick="menutoggle()"
+          />
+        </div>
+      </div>
+      <!-- ----------cart items details------- -->
+      <div class="small-container cart-page">
+        <table>
+          <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+          </tr>
+          <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="robe1.jpg" alt="cart1">
+                    <div>
+                        <p>Party dress</p>
+                        <small>Price:$50.00</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1" /></td>
+            <td>$50.00</td>
+          </tr>
+
+          <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="robe22.jpg" alt="cart1">
+                    <div>
+                        <p>Party dress</p>
+                        <small>Price:$50.00</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1" /></td>
+            <td>$50.00</td>
+          </tr>
+
+          <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="robe3.jpg" alt="cart1">
+                    <div>
+                        <p>Party dress</p>
+                        <small>Price:$50.00</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1" /></td>
+            <td>$50.00</td>
+          </tr>
+        </table>
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>$150.00</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>$35.00</td>
+                </tr>
+                <tr>
+                    <td>total</td>
+                    <td>$185.00</td>
+                </tr>
+            </table>
+
+
+        </div>
+
+
+
+
+
+      </div>
+    </div>
+
+    <!-- --------footer-------- -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h1 style="color: rgb(191, 37, 68)">E-bye</h1>
+          </div>
+        </div>
+        <hr />
+        <p class="pp">Copyright 2020 - Follow us</p>
+      </div>
+    </footer>
+
+    <!-- --------js menu------- -->
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+      MenuItems.style.maxHeight = "0px";
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>

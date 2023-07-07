@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>e-bye</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+    /> -->
+  </head>
+  <body>
+    <div class="header" >
+      <div class="container">
+        <div class="navbar">
+          <div class="logo"><a href="file.html"><h1 style="color: rgb(191, 37, 68)">E-bye</h1></a></div>
+
+          <nav>
+            <ul id="MenuItems">
+              <li><a href="file.html">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <!-- <li><a href="">About us</a></li>
+              <li><a href="">Contact</a></li> -->
+              <li><a href="account.html">Account</a></li>
+            </ul>
+          </nav>
+
+          <a href="cart.html"><img
+            src="cart icon.jpg"
+            alt="error cart"
+            width="30px"
+            height="30px"
+          /></a>
+          <img
+            src="menu icon.png"
+            alt="error menu"
+            class="menu-icon"
+            onclick="menutoggle()"
+          />
+        </div>
+
+        <div class="row">
+          <div class="col-2">
+            <h1>All you need is here!</h1>
+            <p>
+              Are u looking for a specific style?<br />
+              shop here! it's your oportunity!
+            </p>
+            <a href="products.html" class="btn">See our Products</a>
+          </div>
+          <div class="col-2">
+            <img src="robe home.webp" alt="error" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-------les catégories----- -->
+    <!-- <div class="categories">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-3">
+            <img src="categorie1.jpg" alt="cate1" width="400" height="400" />
+          </div>
+          <div class="col-3">
+            <img src="categorie2.jpg" alt="cate1" width="400" height="400" />
+          </div>
+          <div class="col-3">
+            <img src="categorie3.jpg" alt="cate1" width="400" height="400" />
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-------les produits----- -->
+    <div class="small-container">
+      <h2 class="title">Our Best Dresses</h2>
+      <div class="row">
+        <div class="col-4">
+          <a href="product-details.html"><img src="robe1.jpg" alt="robe1" /></a>
+          <a href="product-details.html"><h4>Party dress</h4></a>
+          <!-- <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div> -->
+          <p>$50.00</p>
+        </div>
+
+        <div class="col-4">
+          <img src="robe22.jpg" alt="robe1" />
+          <h4>Party dress</h4>
+
+          <p>$50.00</p>
+        </div>
+
+        <div class="col-4">
+          <img src="robe3.jpg" alt="robe1" />
+          <h4>Party dress</h4>
+
+          <p>$50.00</p>
+        </div>
+
+        <div class="col-4">
+          <img src="robe4.jpg" alt="robe1" />
+          <h4>Party dress</h4>
+
+          <p>$50.00</p>
+        </div>
+      </div>
+    </div>
+
+    <!-------les avis des gens----- -->
+    <div class="testimonial">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-3">
+            <img src="test1.jpg" alt="test1" />
+            <h3>meghan trainer</h3>
+            <p>
+              a well-designed dress reflects a harmonious blend of style,
+              functionality, and attention to detail.I love it really, i'am
+              obssessed
+            </p>
+          </div>
+          <div class="col-3">
+            <img src="test2.jpg" alt="test1" />
+            <h3>marita hirous</h3>
+            <p>
+              The fit of a dress is crucial for both comfort and aesthetics.
+              offering a flattering silhouette that complements the wearer's
+              body shape.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------footer-------- -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h1 style="color: rgb(191, 37, 68)">E-bye</h1>
+          </div>
+        </div>
+        <hr />
+        <p class="pp">Copyright 2020 - Follow us</p>
+      </div>
+    </footer>
+
+    <!-- --------js menu------- -->
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+      MenuItems.style.maxHeight = "0px";
+      function menutoggle() {
+        if ((MenuItems.style.maxHeight == "0px")) {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>
